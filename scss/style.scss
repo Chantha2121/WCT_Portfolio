@@ -1,0 +1,50 @@
+@use 'sass:color';
+
+$navbar-bg-color: rgb(46, 184, 85);
+$logo-color: rgb(117, 221, 249);
+$item-navbar-color: rgb(88, 33, 102);
+
+*{
+    margin: 0;
+    padding: 0;
+    body{
+        background-image: url("/Image/background2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        .navbar{
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $navbar-bg-color;
+            .logo{
+                color: $logo-color;
+                margin-left: 20px;
+            }
+            .leftItem{
+                display: flex;
+                list-style: none;
+                margin-right: 50px;
+                a {
+                    margin-right: 30px;
+                    font-size: 20px;
+                    color: $item-navbar-color; // Your custom navbar color
+                    text-decoration: none; // Removes the underline
+                }
+                
+                /* Optional: Add hover effect if needed */
+                a:hover {
+                    text-decoration: underline; // Underline on hover (optional)
+                }
+            }
+        }
+        #home{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding: 200px;
+        }
+    }
+}
