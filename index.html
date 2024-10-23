@@ -21,27 +21,104 @@
     <div id="home">
         <div class="text">
             <h1>Hello, my name is Choeurn Chantha</h1>
-            <p>I am a Web Developer, my skills include React.js, Nest.js, Node.js, Next.js, and Java programming.</p>
+            <p>I am a Web Developer, my skills include React.js,<br> Nest.js, Node.js, Next.js,<br> and Java programming.</p>
             <button>View my CV</button>
         </div>
         <div class="img">
             <img src="Image/profile.png" alt="Profile Picture">
         </div>
     </div>
-
-    <section id="about" style="background-color: rgb(52, 255, 187); height: 100vh;">
+    <section id="about">
         <h1>About Me</h1>
-        <p>This section contains information about me.</p>
+        <p>
+            This my information about introduce myself. My name is Choeurn Chantha. I am 18 years old. I'm study at the Royal University of Phnom Penh in years 3, for my major is Information Technology Engineering
+        </p>
+    
+        <h2>What I Do</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Web Development</h3>
+                <p>Building responsive and dynamic websites that work across all devices.</p>
+            </div>
+            <div class="service-card">
+                <h3>UI/UX Design</h3>
+                <p>Creating user-friendly interfaces with a focus on design and functionality.</p>
+            </div>
+            <div class="service-card">
+                <h3>SEO Optimization</h3>
+                <p>Optimizing websites to rank higher in search engine results.</p>
+            </div>
+        </div>
     </section>
+    
 
-    <section id="project" style="background-color: lightblue; height: 100vh;">
+    <section id="project">
         <h1>Projects</h1>
-        <p>This section will showcase my projects.</p>
+        <div class="projects-list">
+            <div class="project-card">
+                <img src="Image/1.png" alt="Project 1">
+                <h2>Project 1</h2>
+                <p>This is a description of Project 1.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="project-card">
+                <img src="Image/2.png" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>This is a description of Project 2.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="project-card">
+                <img src="Image/3.png" alt="Project 2">
+                <h2>Project 2</h2>
+                <p>This is a description of Project 2.</p>
+                <a href="#">View Details</a>
+            </div>
+        </div>
     </section>
 
-    <section id="contact" style="background-color: lightcoral; height: 100vh;">
-        <h1>Contact Me</h1>
-        <p>This section will contain my contact information.</p>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h1>Contact Me</h1>
+            <p>If you have any questions or just want to connect, feel free to reach out!</p>
+            <form action="#" method="POST" class="contact-form">
+                <div class="input-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
     </section>
+    
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h2>Chantha Coding</h2>
+                <p>&copy; 2024 Choeurn Chantha. All rights reserved.</p>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="socials">
+                    <a href="https://github.com"><img src="Image/icons8-github-50.png" alt="GitHub"></a>
+                    <a href="https://linkedin.com"><img src="Image/icons8-linked-in-48.png" alt="LinkedIn"></a>
+                    <a href="https://twitter.com"><img src="Image/icons8-twitter-48.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

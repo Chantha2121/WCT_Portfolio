@@ -1,6 +1,9 @@
 @use 'sass:color';
 @use 'navbar';
 @use 'about';
+@use 'project';
+@use 'footer';
+@use 'contact';
 
 $navbar-bg-color: rgb(101, 255, 250);
 $logo-color: rgb(214, 7, 180);
@@ -16,7 +19,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 110vh;
+    height: 135vh;
 }
 
 #home {
@@ -28,7 +31,6 @@ body {
 
     .text {
         margin-left: 30px;
-        margin-top: 10px;
 
         h1 {
             font-size: 3.5vw;  // Use responsive font size
